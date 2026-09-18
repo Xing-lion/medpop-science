@@ -14,6 +14,7 @@ export default function Header() {
           <Link href="/" className="hover:text-[var(--primary)] transition-colors">首页</Link>
           <Link href="/exercises" className="text-sm text-[var(--text-muted)] hover:text-[var(--primary)] transition-colors">康复动作</Link>
           <Link href="/body-map" className="text-sm text-[var(--text-muted)] hover:text-[var(--primary)] transition-colors">🧬 人体地图</Link>
+          <a href="/atlas/" className="text-sm text-[var(--primary)] font-medium hover:underline">3D 解剖 →</a>
           <Link href="/topics" className="hover:text-[var(--primary)] transition-colors">科普专题</Link>
           <Link href="/about" className="hover:text-[var(--primary)] transition-colors">关于</Link>
         </nav>
