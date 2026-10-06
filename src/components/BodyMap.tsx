@@ -32,12 +32,13 @@ const SYSTEM_HEALTH: Record<string, { title: string; summary: string; ref: strin
     articles: [],
   },
   'sensory': {
-    title: '视力保护',
-    summary: '这些结构参与视觉、听觉和平衡等特殊感觉。',
-    ref: '美国眼科学会（AAO）',
+    title: '感官与皮肤',
+    summary: '视觉、听觉、平衡、嗅觉、味觉等感觉器官，以及覆盖全身皮肤的触觉与温度感受。',
+    ref: '美国眼科学会（AAO）/ 中华医学会皮肤性病学分会',
     articles: [
       { title: '20-20-20 法则', slug: 'eye-protection' },
       { title: '近视防控真相', slug: 'myopia-facts' },
+      { title: '防晒不是美白', slug: 'sun-protection' },
     ],
   },
   'arterial': {
