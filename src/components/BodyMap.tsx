@@ -13,6 +13,7 @@ const SYSTEM_HEALTH: Record<string, { title: string; summary: string; ref: strin
     articles: [
       { title: '坐姿自测', slug: 'posture-check' },
       { title: '孩子骨折怎么办', slug: 'fracture-child' },
+      { title: '长高关键期', slug: 'growth-teen' },
     ],
   },
   'muscular': {
@@ -28,9 +29,7 @@ const SYSTEM_HEALTH: Record<string, { title: string; summary: string; ref: strin
     title: '心脏健康',
     summary: '心脏是具有四个腔室的肌肉泵，其瓣膜引导血液通过肺循环和体循环。',
     ref: '美国心脏协会（AHA）',
-    articles: [
-      { title: '考前焦虑缓解', slug: 'mental-anxiety' },
-    ],
+    articles: [],
   },
   'sensory': {
     title: '视力保护',
@@ -45,17 +44,13 @@ const SYSTEM_HEALTH: Record<string, { title: string; summary: string; ref: strin
     title: '动脉与循环',
     summary: '心脏驱动血液通过循环系统。动脉将血液从心脏输送到组织。',
     ref: '美国心脏协会（AHA）',
-    articles: [
-      { title: '考前焦虑缓解', slug: 'mental-anxiety' },
-    ],
+    articles: [],
   },
   'venous': {
     title: '静脉与循环',
     summary: '静脉将血液送回心脏。浅表和深部网络从组织收集血液。',
     ref: '美国心脏协会（AHA）',
-    articles: [
-      { title: '考前焦虑缓解', slug: 'mental-anxiety' },
-    ],
+    articles: [],
   },
   'nervous': {
     title: '神经与大脑',
@@ -69,9 +64,7 @@ const SYSTEM_HEALTH: Record<string, { title: string; summary: string; ref: strin
     title: '呼吸系统',
     summary: '气道将空气输送到肺部，氧气和二氧化碳在空气和血液之间交换。',
     ref: '美国胸科学会（ATS）',
-    articles: [
-      { title: '考前焦虑缓解', slug: 'mental-anxiety' },
-    ],
+    articles: [],
   },
   'digestive': {
     title: '消化系统',
@@ -119,6 +112,7 @@ const SYSTEM_HEALTH: Record<string, { title: string; summary: string; ref: strin
     ref: '中华医学会骨科分会',
     articles: [
       { title: '颈椎自救指南', slug: 'cervical-pose' },
+      { title: '运动扭伤急救', slug: 'ankle-sprain' },
     ],
   },
 };
@@ -334,7 +328,7 @@ export default function BodyMap() {
               {activeHealth.ref && (
                 <div className="text-xs text-[var(--text-muted)] mb-4">📚 {activeHealth.ref}</div>
               )}
-              {activeHealth.articles.length > 0 && (
+              {activeHealth.articles.length > 0 ? (
                 <div className="grid gap-2">
                   {activeHealth.articles.map((a) => (
                     <Link
@@ -347,6 +341,10 @@ export default function BodyMap() {
                       </div>
                     </Link>
                   ))}
+                </div>
+              ) : (
+                <div className="text-xs text-[var(--text-muted)] bg-[var(--bg-warm)] rounded-lg p-3">
+                  该系统的专项科普文章正在编写中
                 </div>
               )}
             </div>
