@@ -24,7 +24,7 @@ export default function Footer() {
             鲁ICP备2026053417号-1
           </a>
           <span className="mx-1">|</span>
-          <a href="https://beian.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+          <a href="https://beian.mps.gov.cn/#/query/webSearch?code=37061302000823" target="_blank" rel="noopener noreferrer" className="hover:underline">
             鲁公网安备37061302000823号
           </a>
         </div>
