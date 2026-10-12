@@ -24,7 +24,7 @@ export default function HomePage() {
             </span>
             <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-4 text-[var(--text)]">
               看得懂的人体知识<br />
-              <span className="text-[var(--primary)]">照得做的康复动作</span>
+              <span className="text-[var(--primary)]">照着做的康复动作</span>
             </h1>
             <p className="text-[var(--text-muted)] mb-6 text-base leading-relaxed">
               不讲难懂的术语，不做吓人的结论。用可视化动画 + 分步骤图解，把医学康复知识讲清楚、讲明白。

@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "医知百科 | 看得懂的人体知识，照得做的康复动作",
+  title: "医知百科 | 看得懂的人体知识，照着做的康复动作",
   description: "面向中小学生及大众的医学、康复类科普知识平台",
 };
 
