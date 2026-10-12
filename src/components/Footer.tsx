@@ -18,10 +18,14 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-[var(--border)] pt-4 text-center text-xs text-[var(--text-muted)]">
-          © {new Date().getFullYear()} 医知百科 · MedPop Science · All rights reserved.
+          © 2026 医知百科 · MedPop Science · All rights reserved.
           <br />
           <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:underline">
             鲁ICP备2026053417号-1
+          </a>
+          <span className="mx-1">|</span>
+          <a href="https://beian.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+            鲁公网安备37061302000823号
           </a>
         </div>
       </div>
